@@ -30,10 +30,10 @@ For development, we recommend using example.php to load header and footer, and i
 * `campaign-xxxxx` folder:
     * body.html
     * head.html
-    * `assets` folder for you campaigns assests (more further down) 
+    * `assets` folder for you campaign's assests (more further down) 
 
 1. Clone this repository as a starting point.
-2. Adjust the name of the of the `campaign-xxxx` folder and the references to it in `example.php` to the folder name for your campaign (most editors/ide should do the loater automatically)    
+2. Adjust the name of the of the `campaign-xxxx` folder and the references to it in `example.php` to the folder name for your campaign (most editors/IDEs should do the later automatically)    
 
 Please keep in mind that `example.php` is just provided for ease of local testing. It tries to emulate some of the functionality we have server side. The real environment will actually **not** execute any php code.
 
