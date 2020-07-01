@@ -11,7 +11,7 @@
 <html>
     <head>
         <?php
-            include('head.html');
+            include('campaign-xxxx/head.html');
         ?>
         <style>
             <?php echo $css; ?>
@@ -23,7 +23,7 @@
             
 
             echo $header;
-            include('body.html');
+            include('campaign-xxxx/body.html');
             echo $footer;
         ?>
     </body>
