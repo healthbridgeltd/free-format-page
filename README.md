@@ -22,13 +22,22 @@ This is a diagram that explains how it works:
 
 ## Getting Started
 
-For development, we recommend using example.php to load header and footer, and inject body.html and head.html. This would be much easier than uploading your files to S3 bucket to see the results that you’ve changed. (All the files and assets you need is in a zip file)
 
-* example.php
-* body.html
-* head.html
 
-Place these files under your PHP environment and hit example.php (e.g. http://localhost:8080/example.php) and you will see a header, ‘Hello World’ text, and a footer.
+For development, we recommend using example.php to load header and footer, and inject body.html and head.html. This would be much easier than uploading your files to S3 bucket to see the results that you’ve changed.
+
+* example.php (local emulator)
+* `campaign-xxxxx` folder:
+    * body.html
+    * head.html
+    * `assets` folder for you campaign's assests (more further down) 
+
+1. Clone this repository as a starting point.
+2. Adjust the name of the of the `campaign-xxxx` folder and the references to it in `example.php` to the folder name for your campaign (most editors/IDEs should do the later automatically)    
+
+Please keep in mind that `example.php` is just provided for ease of local testing. It tries to emulate some of the functionality we have server side. The real environment will actually **not** execute any php code.
+
+### Run using Docker
 
 If you know how to use Docker, the easiest way to start is that going to the folder on terminal, and run the command below:
 
@@ -41,9 +50,11 @@ prompt$ docker run -d -p 8080:80 -v "$PWD":/var/www/html php:7.2-apache
 
 ```
 
-![screenshot of example](docs/example-screenshot.png)
+### Run in your own php Environment
 
-Please keep in mind that `example.php` is just provided for ease of local testing. It tries to emulate some of the functionality we have server side. The real environment will actually *not* execute any php code.
+Place these files under your PHP environment and hit example.php (e.g. http://localhost:8080/example.php) and you will see a header, ‘Hello World’ text, and a footer.
+
+![screenshot of example](docs/example-screenshot.png)
 
 ## Development details
 
